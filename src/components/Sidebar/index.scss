@@ -71,13 +71,20 @@
             }
 
             &:first-child {
+
                 &::after {
                     content: 'HOME';
                 }
             }
             
-            
+            &.active {
+                svg{
+                    color: #ffd700;
+                }
+            }
+
         }
+        
         a.about-link{
             &::after{
                 content: 'ABOUT';
@@ -89,11 +96,7 @@
                 content: 'CONTACT';
             }
         }
-        a.active {
-            svg{
-                color: #ffd700;
-            }
-        }
+
 
     }
     ul{
