@@ -1,6 +1,7 @@
 *{
     overflow: hidden;
 }
+
 .nav-bar {
     background: #181818;
     width: 60px;
@@ -31,7 +32,7 @@
         margin-top: -120px;
         width: 100%;
 
-        a {
+        .navItemLink {
             font-size: 22px;
             color: #4d4d4e;
             display: block;
@@ -70,19 +71,19 @@
                 transition: all .03s ease-out;
             }
 
-            &:first-child {
-
-                &::after {
-                    content: 'HOME';
-                }
-            }
-            
             &.active {
                 svg{
                     color: #ffd700;
                 }
             }
 
+            &:first-child {
+                &::after {
+                    content: 'HOME';
+                }
+            }
+            
+            
         }
         
         a.about-link{
@@ -99,6 +100,7 @@
 
 
     }
+    
     ul{
         position: absolute;
         bottom: 20px;
