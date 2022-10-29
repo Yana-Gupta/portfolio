@@ -70,10 +70,9 @@
                 text-align: center;
                 opacity: 0;
                 transition: all .03s ease-out;
-            }
-            
+            } 
         }
-
+        
         a.home-link{
             &::after{
                 content: 'HOME';
@@ -116,5 +115,11 @@
                 }
             }
         }
+    }
+}
+
+#active {
+    svg{
+        color: #ffd700;
     }
 }

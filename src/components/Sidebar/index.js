@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import './index.scss';
 import LogoY3 from '../../assets/images/LogoY3.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -6,24 +6,23 @@ import { faEnvelope, faHome, faUser} from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Sidebar = () => {
-
+    const location = useLocation()
+    
     return(
-
         <div className="nav-bar">
             <Link className="logo" to='/'>
                 <img src={LogoY3} alt="" />
             </Link>
-
             <nav>
-                <NavLink exact="true" className="navItemLink home-link" to="/">
+                <NavLink exact="true" className="navItemLink home-link" id={location.pathname === '/' ? 'active': ''} to="/">
                     <FontAwesomeIcon icon={faHome} color='#4d4d4e'/> 
                 </NavLink>
 
-                <NavLink exact="true" className="navItemLink about-link" to="/about">
+                <NavLink exact="true" className="navItemLink about-link" id={location.pathname === '/about' ? 'active': ''} to="/about">
                     <FontAwesomeIcon icon={faUser} color='#4d4d4e'/> 
                 </NavLink>
 
-                <NavLink exact="true" className="navItemLink contact-link" to="/contact">
+                <NavLink exact="true" className="navItemLink contact-link" id={location.pathname === '/contact' ? 'active': ''} to="/contact">
                     <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e'/> 
                 </NavLink>
             </nav>
@@ -34,7 +33,7 @@ const Sidebar = () => {
                     </a>
                 </li>
                 <li>
-                    <a target="_blank" rel="noreferrer" href="https://www.github.com/anaagupta">
+                    <a target="_blank" rel="noreferrer" href="https://www.github.com/yanagupta1">
                         <FontAwesomeIcon icon={faGithub} color="4d4d4e" />
                     </a>
                 </li>
@@ -42,6 +41,7 @@ const Sidebar = () => {
         </div>
 
     );
+
 }
 
 export default Sidebar;
