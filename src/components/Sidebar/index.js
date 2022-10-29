@@ -14,15 +14,15 @@ const Sidebar = () => {
                 <img src={LogoY3} alt="" />
             </Link>
             <nav>
-                <NavLink exact="true" className="navItemLink home-link" id={location.pathname === '/' ? 'active': ''} to="/">
+                <NavLink exact="true" className="navItemLink home-link" id={location.pathname === '/' ? 'active': null} to="/">
                     <FontAwesomeIcon icon={faHome} color='#4d4d4e'/> 
                 </NavLink>
 
-                <NavLink exact="true" className="navItemLink about-link" id={location.pathname === '/about' ? 'active': ''} to="/about">
+                <NavLink exact="true" className="navItemLink about-link" id={location.pathname === '/about' ? 'active': null} to="/about">
                     <FontAwesomeIcon icon={faUser} color='#4d4d4e'/> 
                 </NavLink>
 
-                <NavLink exact="true" className="navItemLink contact-link" id={location.pathname === '/contact' ? 'active': ''} to="/contact">
+                <NavLink exact="true" className="navItemLink contact-link" id={location.pathname === '/contact' ? 'active': null} to="/contact">
                     <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e'/> 
                 </NavLink>
             </nav>
