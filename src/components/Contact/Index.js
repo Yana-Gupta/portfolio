@@ -23,7 +23,7 @@ const Contact = () => {
                             strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
                             idx={15} />
                     </h1>
-                    <p>Let's get in touch.</p>
+                    <p>Send a review note.</p>
                     <div className='contact-form'>
                         <form>
                             <ul>
@@ -65,6 +65,7 @@ const Contact = () => {
                                         value='Send' />
                                 </li>
                             </ul>
+                            {/* <button type='submit'>SUBMIT</button> */}
                         </form>
                     </div>
                 </div>

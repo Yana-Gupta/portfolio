@@ -1,5 +1,12 @@
 .container{
-    p{
-        font-size: 15px;
-    }
+    display: flex;
+    flex-direction: row;
+}
+
+.skill {
+    width: 50%;
+    position: relative;
+    top: 20%;
+    right: 0px;
+    max-height: 90%;
 }

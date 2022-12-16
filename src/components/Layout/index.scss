@@ -41,18 +41,17 @@
 
 .about-page,
 .contact-page{
+    position: absolute;
+    top: 0px;
+    left: 0px;
     .text-zone {
-        position: absolute;
-        left: 10%;
-        top: 50%;
-        transform: translateY(-50%);
+        position: relative;
+        left: 70px;
+        top: 18%;
         width: 40%;
-        vertical-align: middle;
-        display: table-cell;
         max-height: 90%;
-
         h1 {
-            font-size: 53px;
+            font-size: 60px;
             font-family: 'Coolvetica';
             color: #ffd700;
             font-weight: 400;
@@ -87,7 +86,7 @@
         }
 
         p {
-            font-style: 13px;
+            font-size: 14px;
             color: #fff;
             font-family: sans-serif;
             font-weight: 300;
