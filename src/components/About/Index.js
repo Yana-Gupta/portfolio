@@ -23,9 +23,8 @@ const About = () => {
                     <h1>
                         < AnimatedLetters letterClass={letterClass} strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']} idx={15} />
                     </h1>
-                    <p>Hello, I am an undergradte Information Technology currently having a deep interest into web technologies.</p>
-                    <p></p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Hello, I am a 2nd year student at ABV-IIITM Gwalior having strong interest in technology.</p>
+                    <p>I have done web development with javascript.</p>
                 </div>
 
 
