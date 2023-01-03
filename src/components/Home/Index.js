@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters/Index';
 import './Index.scss';
-import Logo from './Logo/Index';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
