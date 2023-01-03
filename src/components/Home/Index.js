@@ -66,7 +66,6 @@ const Home = () => {
                     </Link>
                 </div>
             </div>
-            <Logo />
         </>
     );
 }
