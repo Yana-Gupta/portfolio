@@ -2,7 +2,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import './index.scss';
 import LogoY3 from '../../assets/images/LogoY3.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faHome, faUser} from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faHome, faProjectDiagram} from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Sidebar = () => {
@@ -19,7 +19,7 @@ const Sidebar = () => {
                 </NavLink>
 
                 <NavLink exact="true" className="navItemLink about-link" id={location.pathname === '/about' ? 'active': null} to="/about">
-                    <FontAwesomeIcon icon={faUser} color='#4d4d4e'/> 
+                    <FontAwesomeIcon icon={faProjectDiagram} color='#4d4d4e'/> 
                 </NavLink>
 
                 <NavLink exact="true" className="navItemLink contact-link" id={location.pathname === '/contact' ? 'active': null} to="/contact">

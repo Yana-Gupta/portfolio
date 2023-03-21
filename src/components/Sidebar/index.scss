@@ -1,6 +1,3 @@
-*{
-    overflow: hidden;
-}
 
 .nav-bar {
     background: #181818;
@@ -9,6 +6,7 @@
     position: absolute;
     top: 0%;
     z-index: 3;
+    position: fixed;
     min-height: 500px;
 
     .logo {
