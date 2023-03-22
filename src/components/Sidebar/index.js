@@ -67,18 +67,29 @@ const Sidebar = () => {
           </li>
         </ul>
       </div>
+
+{/* 
       <div className="top-bar">
-        <ul className="nav-container">
-          <li className="nav-item">
-            <Link to='/'>Home</Link>
-          </li>
-          <li className="nav-item">
-            <Link to=''>
-            Projects
-            </Link>
-            </li>
-        </ul>
-      </div>
+        <nav>
+          <NavLink
+            exact="true"
+            className="navItemLink about-link"
+            id={location.pathname === '/about' ? 'active' : null}
+            to="/"
+          >
+            Bye
+          </NavLink>
+
+          <NavLink
+            exact="true"
+            className="navItemLink contact-link"
+            id={location.pathname === '/contact' ? 'active' : null}
+            to="/about"
+          >
+            hi
+          </NavLink>
+        </nav>
+      </div> */}
     </div>
   )
 }

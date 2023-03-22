@@ -28,7 +28,6 @@ const About = () => {
 
                 </div>
                 <div className='skill'>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod odit, harum repellat ipsa ipsam laboriosam culpa, numquam eos est maiores deleniti mollitia veniam molestias expedita? Corrupti deleniti aliquam expedita molestiae.
                 </div>
             </div>
         </>

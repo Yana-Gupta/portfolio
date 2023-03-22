@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters/Index'
 import './Index.scss'
 import { Skills } from '../../data.js'
@@ -39,7 +38,7 @@ const Home = () => {
   return (
     <>
       <div className="container home-page">
-        <div className='home'>
+        <div className="home">
           <div className="text-zone">
             <h1>
               <span className={letterClass}>H</span>
@@ -62,9 +61,14 @@ const Home = () => {
               />
             </h1>
             <h2>Full Stack Web Developer / Blockchain Enthusiast</h2>
-            <Link to="/" className="flat-button">
-              Download Resume
-            </Link>
+            <button className="flat-button">
+              <a
+                href="https://drive.google.com/file/d/1OJoICYxxNLNYVPw_Y92xWc576ZGvfG23/view?usp=sharing"
+                style={{ textDecoration: 'none', color: '#fff' }}
+              >
+                View Resume
+              </a>
+            </button>
           </div>
           <div className="image-zone"></div>
         </div>

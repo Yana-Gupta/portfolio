@@ -146,6 +146,7 @@
         }
     }
 
+
     @media screen and (max-width: 680px) {
         .skill-section {
             width: 75%;
@@ -179,6 +180,7 @@
 
 .flat-button {
     color: #ffd700;
+    background-color: #022c43;
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 4px;
@@ -196,5 +198,11 @@
         background: #ffd700;
         opacity: 0.32;
         color: rgb(0, 0, 0);
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .home-page{
+        top: 80px;
     }
 }
