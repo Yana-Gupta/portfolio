@@ -1,47 +1,86 @@
-import { Link, NavLink, useLocation } from 'react-router-dom';
-import './index.scss';
-import LogoY3 from '../../assets/images/LogoY3.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faHome, faProjectDiagram} from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { Link, NavLink, useLocation } from 'react-router-dom'
+import './index.scss'
+import LogoY3 from '../../assets/images/LogoY3.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faEnvelope,
+  faHome,
+  faProjectDiagram,
+} from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => {
-    const location = useLocation()
-    
-    return(
-        <div className="nav-bar">
-            <Link className="logo" to='/'>
-                <img src={LogoY3} alt="" />
+  const location = useLocation()
+
+  return (
+    <div>
+      <div className="nav-bar">
+        <Link className="logo" to="/">
+          <img src={LogoY3} alt="" />
+        </Link>
+        <nav>
+          <NavLink
+            exact="true"
+            className="navItemLink home-link"
+            id={location.pathname === '/' ? 'active' : null}
+            to="/"
+          >
+            <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+          </NavLink>
+
+          <NavLink
+            exact="true"
+            className="navItemLink about-link"
+            id={location.pathname === '/about' ? 'active' : null}
+            to="/about"
+          >
+            <FontAwesomeIcon icon={faProjectDiagram} color="#4d4d4e" />
+          </NavLink>
+
+          <NavLink
+            exact="true"
+            className="navItemLink contact-link"
+            id={location.pathname === '/contact' ? 'active' : null}
+            to="/contact"
+          >
+            <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+          </NavLink>
+        </nav>
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/yana-gupta-8a136a22a/"
+            >
+              <FontAwesomeIcon icon={faLinkedin} color="4d4d4e" />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.github.com/yanagupta1"
+            >
+              <FontAwesomeIcon icon={faGithub} color="4d4d4e" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className="top-bar">
+        <ul className="nav-container">
+          <li className="nav-item">
+            <Link to='/'>Home</Link>
+          </li>
+          <li className="nav-item">
+            <Link to=''>
+            Projects
             </Link>
-            <nav>
-                <NavLink exact="true" className="navItemLink home-link" id={location.pathname === '/' ? 'active': null} to="/">
-                    <FontAwesomeIcon icon={faHome} color='#4d4d4e'/> 
-                </NavLink>
-
-                <NavLink exact="true" className="navItemLink about-link" id={location.pathname === '/about' ? 'active': null} to="/about">
-                    <FontAwesomeIcon icon={faProjectDiagram} color='#4d4d4e'/> 
-                </NavLink>
-
-                <NavLink exact="true" className="navItemLink contact-link" id={location.pathname === '/contact' ? 'active': null} to="/contact">
-                    <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e'/> 
-                </NavLink>
-            </nav>
-            <ul>
-                <li>
-                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/yana-gupta-8a136a22a/">
-                        <FontAwesomeIcon icon={faLinkedin} color="4d4d4e" />
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" rel="noreferrer" href="https://www.github.com/yanagupta1">
-                        <FontAwesomeIcon icon={faGithub} color="4d4d4e" />
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-    );
-
+            </li>
+        </ul>
+      </div>
+    </div>
+  )
 }
 
-export default Sidebar;
+export default Sidebar

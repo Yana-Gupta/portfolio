@@ -1,4 +1,3 @@
-
 .nav-bar {
     background: #181818;
     width: 60px;
@@ -7,7 +6,6 @@
     top: 0%;
     z-index: 3;
     position: fixed;
-    min-height: 500px;
 
     .logo {
         display: block;
@@ -51,7 +49,7 @@
                     opacity: 0;
                 }
 
-                &::after{
+                &::after {
                     opacity: 1;
                 }
 
@@ -68,29 +66,29 @@
                 text-align: center;
                 opacity: 0;
                 transition: all .03s ease-out;
-            } 
+            }
         }
-        
-        a.home-link{
-            &::after{
+
+        a.home-link {
+            &::after {
                 content: 'HOME';
             }
         }
-        
-        a.about-link{
-            &::after{
+
+        a.about-link {
+            &::after {
                 content: 'ABOUT';
             }
         }
-        
-        a.contact-link{
-            &::after{
+
+        a.contact-link {
+            &::after {
                 content: 'CONTACT';
             }
         }
     }
-    
-    ul{
+
+    ul {
         position: absolute;
         bottom: 20px;
         width: 100%;
@@ -100,15 +98,15 @@
         text-align: center;
         margin: 0;
 
-        li{
-            a{
+        li {
+            a {
                 padding: 7px 0;
                 display: block;
                 font-size: 20px;
                 line-height: 16px;
                 text-decoration: none;
 
-                &:hover{
+                &:hover {
                     color: #ffd700;
                 }
             }
@@ -117,7 +115,34 @@
 }
 
 #active {
-    svg{
+    svg {
         color: #ffd700;
     }
 }
+
+@media screen and (max-width: 760px) {
+    .nav-bar {
+        background-color: pink;
+        height: 0;
+        width: 0;
+        display: none;
+    }
+}
+
+// @media screen and (max-width: 760px) {
+//     .top-bar{
+//         height: 70px;
+//         width: 100%;
+//         .nav-container{
+//             display: flex;
+//             flex-direction: row;
+//             list-style: none;
+//             .nav-item{
+//                 font-size: 20px;
+//                 padding: 20px;
+//                 color: #fff;
+//                 text-decoration: none;
+//             }
+//         }
+//     }
+// }

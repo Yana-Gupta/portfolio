@@ -129,7 +129,18 @@
         }
     }
 
+
     @media screen and (max-width: 760px) {
+        .home{
+            .text-zone{
+                left: 20px;
+            }
+        }
+        .skill-section{
+            left: 20px;
+            // width: 100%;
+            // margin: auto;
+        }
         .skill-container {
             grid-template-columns: repeat(7, 80px);
         }
