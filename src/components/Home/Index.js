@@ -39,31 +39,34 @@ const Home = () => {
   return (
     <>
       <div className="container home-page">
-        <div className="text-zone">
-          <h1>
-            <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}>i,</span>
-            <br />
-            <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m</span>
-            <span className={`${letterClass} _15`}>&nbsp;</span>
+        <div className='home'>
+          <div className="text-zone">
+            <h1>
+              <span className={letterClass}>H</span>
+              <span className={`${letterClass} _12`}>i,</span>
+              <br />
+              <span className={`${letterClass} _13`}>I</span>
+              <span className={`${letterClass} _14`}>'m</span>
+              <span className={`${letterClass} _15`}>&nbsp;</span>
 
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={nameArray}
-              idx={16}
-            />
-            <br />
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={jobArray}
-              idx={21}
-            />
-          </h1>
-          <h2>Full Stack Web Developer / Blockchain Enthusiast</h2>
-          <Link to="/contact" className="flat-button">
-            CONTACT ME
-          </Link>
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={nameArray}
+                idx={16}
+              />
+              <br />
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={jobArray}
+                idx={21}
+              />
+            </h1>
+            <h2>Full Stack Web Developer / Blockchain Enthusiast</h2>
+            <Link to="/" className="flat-button">
+              Download Resume
+            </Link>
+          </div>
+          <div className="image-zone"></div>
         </div>
         <div className="skill-section" style={{ padding: '10px 20px' }}>
           <h1>TeachStacks</h1>

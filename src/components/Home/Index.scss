@@ -1,144 +1,170 @@
-.home-page{
+.home-page {
     position: absolute;
     left: 0px;
     top: 0px;
     width: 100%;
     display: flex;
+    flex-direction: column;
     padding-bottom: 20px;
     overflow-x: hidden;
-    .text-zone{
-        position: relative;
-        top: 30%;
-        left: 76px;
-        width: 50%;
-        h1{
-            color: #fff;
-            font-size: 50px;
-            margin: 0;
-            font-family: 'Coolvetica';
-            font-weight: 400;
 
-            @media screen and ( max-width: 1000px ) {
-                font-size: 30px;
+    .home {
+        width: 80%;
+        height: 60%;
+        .text-zone {
+            position: relative;
+            top: 30%;
+            left: 80px;
+            width: 50%;
+
+            h1 {
+                color: #fff;
+                font-size: 50px;
+                margin: 0;
+                font-family: 'Coolvetica';
+                font-weight: 400;
+                
+                &::before {
+                    content: "<h1>";
+                    font-family: "La Belle Aurore", cursive;
+                    color: #ffd700;
+                    font-size: 18px;
+                    position: absolute;
+                    margin-top: -32px;
+                    left: 4px;
+                    opacity: 0.6;
+                    top: 31px;
+
+                }
+
+                &::after {
+                    content: '<h1/>';
+                    font-family: 'La Belle Aurore';
+                    color: #ffd700;
+                    font-size: 18px;
+                    position: absolute;
+                    margin-left: 20px;
+                    margin-top: 18px;
+                    animation: fadeIn 1s 1.7s backwards;
+                    opacity: 0.6;
+                }
             }
-            @media screen and ( max-width: 600px ) {
-                font-size: 30px;
-            }
-            &::before{
-                content: "<h1>";
-                font-family: "La Belle Aurore", cursive;
-                color: #ffd700;
-                font-size: 18px;
-                position: absolute;
-                margin-top: -32px;
-                left: 4px;
-                opacity: 0.6;
-                top: 31px;
-            
-            }
-            
-            &::after{
-                content: '<h1/>';
-                font-family: 'La Belle Aurore';
-                color: #ffd700;
-                font-size: 18px;
-                position: absolute;
-                margin-left: 20px;
-                margin-top: 18px;
-                animation: fadeIn 1s 1.7s backwards;
-                opacity: 0.6;
-            }
-        }
-        h2{
-            color: #8d8d8d;
-            margin-top: 20px;
-            font-weight: 400;
-            font-size: 16px;
-            font-family: sans-serif;
-            letter-spacing: 3px;
-            font-size: 1.4rem;
-            animation: fadeIn 1s 1.8s backwards;
-            @media screen and ( max-width: 600px) {
-                letter-spacing: 1px;
-            }
-            @media screen and ( max-width: 1100px) {
-                letter-spacing: .9px;
+
+            h2 {
+                color: #8d8d8d;
+                margin-top: 20px;
+                font-weight: 400;
+                font-size: 16px;
+                font-family: sans-serif;
+                letter-spacing: 3px;
+                font-size: 1.4rem;
+                animation: fadeIn 1s 1.8s backwards;
+
+                @media screen and (max-width: 600px) {
+                    letter-spacing: 1px;
+                }
+
+                @media screen and (max-width: 1100px) {
+                    letter-spacing: .9px;
+                }
             }
         }
     }
-    .skill-section{
+
+    .skill-section {
         color: #fff;
         border: 1px solid;
-        // margin: 10px;
         border-radius: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 40%;
+        width: 80%;
         margin-top: 10px;
         margin-bottom: 50px;
+        position: relative;
+        left: 80px;
     }
 
-    .skill-container{
+    .skill-container {
         display: grid;
-        grid-template-columns: repeat(8, 80px);
+        padding: 10px;
+        grid-template-columns: repeat(13, 80px);
     }
-    @media screen and ( max-width: 1360px )  {
-        .skill-container{
-            grid-template-columns: repeat(8, 60px);
+
+    @media screen and (max-width: 1360px) {
+        .skill-container {
+            grid-template-columns: repeat(12, 80px);
         }
     }
-    
-    @media screen and ( max-width: 1160px )  {
-        .skill-container{
-            grid-template-columns: repeat(6, 60px);
+
+    @media screen and (max-width: 1160px) {
+        .skill-container {
+            grid-template-columns: repeat(10, 80px);
         }
     }
-    
-    @media screen and ( max-width: 900px )  {
+
+    @media screen and (max-width: 900px) {
         flex-direction: column;
-        .text-zone{
+
+        .text-zone {
             width: 100%;
             min-height: 80%;
-            h1{
+
+            h1 {
                 font-size: 40px;
             }
         }
-        .skill-container{
-            grid-template-columns: repeat(10, 60px);
+
+        .skill-container {
+            grid-template-columns: repeat(8, 80px);
         }
-        .skill-section{
+
+        .skill-section {
             width: 80%;
             position: relative;
             left: 70px;
             margin-bottom: 10px;
         }
     }
-    
-    @media screen and ( max-width: 750px )  {
-        .skill-container{
-            grid-template-columns: repeat(8, 55px);
+
+    @media screen and (max-width: 760px) {
+        .skill-container {
+            grid-template-columns: repeat(7, 80px);
         }
     }
-    @media screen and ( max-width: 550px )  {
-        .skill-section{
+
+    @media screen and (max-width: 680px) {
+        .skill-section {
             width: 75%;
         }
-        .skill-container{
-            grid-template-columns: repeat(6, 60px);
+
+        .skill-container {
+            grid-template-columns: repeat(6, 80px);
         }
     }
-    @media screen and ( max-width: 450px )  {
-        .skill-section{
+
+    @media screen and (max-width: 600px) {
+        .skill-section {
             width: 75%;
         }
-        .skill-container{
-            grid-template-columns: repeat(5, 60px);
+
+        .skill-container {
+            grid-template-columns: repeat(5, 80px);
         }
     }
+    @media screen and (max-width: 500px) {
+        .skill-section {
+            width: 75%;
+        }
+
+        .skill-container {
+            grid-template-columns: repeat(4, 80px);
+        }
+    }
+        
 }
 
-.flat-button{
+.flat-button {
     color: #ffd700;
     font-size: 13px;
     font-weight: 400;
@@ -150,8 +176,8 @@
     float: left;
     animation: fadeIn 1s 1.8s backwards;
     white-space: nowrap;
-    
-    
+
+
     &:hover {
         background: #ffd700;
         opacity: 0.32;
