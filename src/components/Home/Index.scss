@@ -10,13 +10,15 @@
 
     .home {
         width: 80%;
-        height: 60%;
+        height: 100%;
         .text-zone {
             position: relative;
-            top: 30%;
             left: 80px;
             width: 50%;
-
+            height: 500px;
+            justify-content: center;
+            flex-direction: column;
+            display: flex;
             h1 {
                 color: #fff;
                 font-size: 50px;
@@ -176,6 +178,7 @@
     float: left;
     animation: fadeIn 1s 1.8s backwards;
     white-space: nowrap;
+    width: 160px;
 
 
     &:hover {
